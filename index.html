@@ -101,7 +101,7 @@
         
         .btn-primary:hover,
         .btn-primary:focus {
-            background-color: #0DBF95;
+            background-color: var(--accent-gold);
             box-shadow: var(--shadow-hover);
             transform: translateY(-2px);
         }
@@ -198,20 +198,18 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
         
-        /* Hero Section */
+        /* Hero Section - TEAL TO BLACK GRADIENT */
         .hero {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(16, 220, 170, 0.3)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f2f5" width="1200" height="600"/><g fill="%23ddd"><circle cx="300" cy="150" r="80"/><circle cx="900" cy="450" r="120"/><rect x="100" y="400" width="200" height="100" rx="8"/><rect x="700" y="100" width="300" height="150" rx="12"/></g></svg>');
+            background: linear-gradient(135deg, #000000 0%, #10DCAA 100%);
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
-            min-height: 100vh;
+            min-height: 55vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: white;
-            padding: 120px 20px 80px;
+            padding: 100px 20px 50px;
         }
         
         .hero-content {
@@ -531,7 +529,6 @@
             }
             
             .hero {
-                background-attachment: scroll;
                 padding: 100px 20px 60px;
             }
             
@@ -602,7 +599,6 @@
     <!-- Header -->
     <header class="header">
         <div class="header-container">
-            <!-- Replace "sehtah-logo-icon.png" with your actual logo file path -->
             <img src="sehtah-logo-icon.png" alt="Sehtah Services" class="logo">
             
             <nav class="nav" id="nav">
@@ -867,23 +863,6 @@
                 }
             }
         });
-        
-        // Performance optimization: Lazy load background images
-        if ('IntersectionObserver' in window) {
-            const heroObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.backgroundImage = `
-                            linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(16, 220, 170, 0.3)),
-                            url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f2f5" width="1200" height="600"/><g fill="%23ddd"><circle cx="300" cy="150" r="80"/><circle cx="900" cy="450" r="120"/><rect x="100" y="400" width="200" height="100" rx="8"/><rect x="700" y="100" width="300" height="150" rx="12"/></g></svg>')
-                        `;
-                        heroObserver.unobserve(entry.target);
-                    }
-                });
-            });
-            
-            heroObserver.observe(document.querySelector('.hero'));
-        }
     </script>
 </body>
 </html>
