@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A reliable, customer-focused e-commerce retailer partnering with suppliers and brands to bring high-quality products to consumers. Explore partnership opportunities.">
+    <meta name="keywords" content="retail partner for brands, authorized retailer, e-commerce retailer, Amazon FBA retailer, e-commerce brand partnerships, marketplace retail partner, brand distribution partner, supplier partnerships, brand partnership inquiries, online retail brand">
+    <meta name="author" content="Sehtah Services">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Sehtah Services - A Trusted Retail Partner">
+    <meta property="og:description" content="Thoughtfully curated products for everyday living.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sehtahservices.com">
+    <meta property="og:image" content="https://www.sehtahservices.com/og-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Sehtah Services",
+        "url": "https://www.sehtahservices.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2079 Pacific Street, Unit 2",
+            "addressLocality": "Brooklyn",
+            "addressRegion": "NY",
+            "postalCode": "11233",
+            "addressCountry": "US"
+        },
+        "telephone": "(646) 450-5461"
+    }
+    </script>
+    
+    <title>Sehtah Services - A Trusted Retail Partner for High-Quality Consumer Products</title>
+    
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background-color: #FFFFFF;
+        }
+        
+        /* CSS Custom Properties */
+        :root {
+            --primary-black: #000000;
+            --primary-white: #FFFFFF;
+            --accent-teal: #10DCAA;
+            --accent-gold: #FEC500;
+            --text-dark: #000000;
+            --text-light: #333333;
+            --background-light: #f8f9fa;
+            --border-radius: 8px;
+            --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s ease;
+            --max-width: 1200px;
+        }
+        
+        /* Utility Classes */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            min-height: 44px;
+            min-width: 44px;
+            border: none;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-teal);
+            color: var(--primary-black);
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: #0DBF95;
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-black);
+            border: 2px solid var(--primary-black);
+        }
+        
+        .btn-outline:hover,
+        .btn-outline:focus {
+            background-color: var(--primary-black);
+            color: var(--primary-white);
+        }
+        
+        /* Focus States for Accessibility */
+        *:focus {
+            outline: 2px solid var(--accent-teal);
+            outline-offset: 2px;
+        }
+        
+        /* Header Styles */
+        .header {
+            background-color: white;
+            box-shadow: var(--shadow-subtle);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        
+        .logo {
+            height: 60px;
+            width: auto;
+            max-width: 80px;
+        }
+        
+        .nav {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 8px 0;
+        }
+        
+        .nav a:hover,
+        .nav a:focus {
+            color: var(--accent-teal);
+        }
+        
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            gap: 4px;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--text-dark);
+            transition: var(--transition);
+        }
+        
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(16, 220, 170, 0.3)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f2f5" width="1200" height="600"/><g fill="%23ddd"><circle cx="300" cy="150" r="80"/><circle cx="900" cy="450" r="120"/><rect x="100" y="400" width="200" height="100" rx="8"/><rect x="700" y="100" width="300" height="150" rx="12"/></g></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 120px 20px 80px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        /* Values Section */
+        .values {
+            padding: 80px 20px;
+            background-color: var(--background-light);
+        }
+        
+        .values h2 {
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: var(--primary-black);
+            margin-bottom: 60px;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .value-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-subtle);
+            text-align: center;
+            transition: var(--transition);
+            border-top: 4px solid var(--accent-teal);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-top-color: var(--accent-gold);
+        }
+        
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--accent-teal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 24px;
+            color: var(--primary-black);
+        }
+        
+        .value-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-black);
+            margin-bottom: 15px;
+        }
+        
+        .value-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 80px 20px;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: var(--primary-black);
+            margin-bottom: 30px;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        
+        .about-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(45deg, var(--primary-black), var(--accent-teal));
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 80px 20px;
+            background-color: var(--background-light);
+        }
+        
+        .contact h2 {
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: var(--primary-black);
+            margin-bottom: 60px;
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-subtle);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e1e5e9;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            transition: var(--transition);
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--accent-teal);
+            outline: none;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #999;
+        }
+        
+        .contact-info {
+            padding: 40px;
+        }
+        
+        .contact-info h3 {
+            color: var(--primary-black);
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        
+        .contact-details {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-subtle);
+        }
+        
+        .contact-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .contact-item strong {
+            color: var(--primary-black);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .contact-item a {
+            color: var(--accent-teal);
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--primary-black);
+            color: white;
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            width: 44px;
+            height: 44px;
+            background-color: var(--accent-teal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-black);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: bold;
+        }
+        
+        .social-links a:hover,
+        .social-links a:focus {
+            background-color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .nav {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: var(--shadow-subtle);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+            
+            .nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .hero {
+                background-attachment: scroll;
+                padding: 100px 20px 60px;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .header,
+            .hamburger,
+            .btn,
+            .contact-form {
+                display: none;
+            }
+            
+            .hero {
+                background: var(--primary-black);
+                color: white;
+                page-break-after: always;
+            }
+            
+            body {
+                font-size: 12pt;
+                line-height: 1.4;
+            }
+            
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+        }
+        
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            :root {
+                --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.3);
+                --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.4);
+            }
+        }
+        
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Replace "sehtah-logo-icon.png" with your actual logo file path -->
+            <img src="sehtah-logo-icon.png" alt="Sehtah Services" class="logo">
+            
+            <nav class="nav" id="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>A Trusted Retail Partner for High-Quality Consumer Products</h1>
+                <p>We collaborate with reputable manufacturers and wholesalers to introduce quality products to online marketplaces. By combining strategic retail expertise with excellent customer care, we help great products reach the customers who need them most.</p>
+                <a href="#contact" class="btn btn-primary">Contact Us Today</a>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values" id="services">
+            <div class="container">
+                <h2>Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card fade-in">
+                        <div class="value-icon">🤝</div>
+                        <h3>Dependable Partnerships</h3>
+                        <p>We value clear communication, mutual trust, and long-term collaborations with suppliers and brands.</p>
+                    </div>
+                    <div class="value-card fade-in">
+                        <div class="value-icon">⭐</div>
+                        <h3>Customer-First Retailing</h3>
+                        <p>Every product we choose, test, and promote is selected with customer satisfaction and quality in mind.</p>
+                    </div>
+                    <div class="value-card fade-in">
+                        <div class="value-icon">📈</div>
+                        <h3>Integrity & Performance</h3>
+                        <p>We operate with transparency, strong ethics, and a commitment to delivering consistent sales and brand protection across marketplaces.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text fade-in">
+                        <h2>About Sehtah Services</h2>
+                        <p><strong>Sehtah Services</strong> is a modern e-commerce retailer dedicated to sourcing high-quality, <strong>reliable</strong> products that truly meet customer needs. We partner with <strong>reputable</strong> suppliers and manufacturers to curate a <strong>thoughtful</strong> catalog that reflects our commitment to value, durability, and exceptional user experience.</p>
+                        <p>Built on long-term relationships and a <strong>data-driven</strong> approach to retail, we focus on delivering products that customers love — and offering suppliers a dependable, <strong>professional</strong>, and growth-oriented retail partner. Whether it's introducing innovative items to the market or expanding distribution for established brands, our goal is always the same: <strong>strong</strong> sales, <strong>excellent</strong> reputation, and a <strong>seamless</strong> experience for everyone involved.</p>
+                        <a href="#contact" class="btn btn-outline">Learn More</a>
+                    </div>
+                    <div class="about-image fade-in">
+                        <img src="sehtah-logo-solid.png" alt="Sehtah Services" style="max-width: 85%; height: auto; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <form class="contact-form fade-in" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us about your partnership inquiry or business needs"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-info fade-in">
+                        <h3>Contact Information</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <strong>Business Address</strong>
+                                Sehtah Services<br>
+                                2079 Pacific Street, Unit 2<br>
+                                Brooklyn, NY 11233
+                            </div>
+                            <div class="contact-item">
+                                <strong>Phone Number</strong>
+                                <a href="tel:+16464505461">(646) 450-5461</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Email</strong>
+                                <a href="mailto:info@sehtahservices.com">info@sehtahservices.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Business Hours</strong>
+                                Monday - Friday: 10:00 AM - 6:00 PM ET<br>
+                                Saturday: 10:00 AM - 2:00 PM ET<br>
+                                Sunday: Closed
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/sehtahservices" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+            </div>
+            <p>&copy; 2025 Sehtah Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on links
+        const navLinks = nav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Form submission handling
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Basic form validation
+            if (!data.name || !data.email || !data.message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Simulate form submission
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call delay
+            setTimeout(() => {
+                alert('Thank you for your message! We\'ll get back to you soon.');
+                this.reset();
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+        
+        // Header background on scroll
+        const header = document.querySelector('.header');
+        let lastScrollY = window.scrollY;
+        
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 100) {
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.backgroundColor = 'white';
+                header.style.backdropFilter = 'none';
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+        
+        // Keyboard navigation support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+        
+        // Focus trap for mobile menu
+        nav.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab') {
+                const focusableElements = nav.querySelectorAll('a');
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+                
+                if (e.shiftKey && document.activeElement === firstElement) {
+                    e.preventDefault();
+                    lastElement.focus();
+                } else if (!e.shiftKey && document.activeElement === lastElement) {
+                    e.preventDefault();
+                    firstElement.focus();
+                }
+            }
+        });
+        
+        // Performance optimization: Lazy load background images
+        if ('IntersectionObserver' in window) {
+            const heroObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.backgroundImage = `
+                            linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(16, 220, 170, 0.3)),
+                            url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f2f5" width="1200" height="600"/><g fill="%23ddd"><circle cx="300" cy="150" r="80"/><circle cx="900" cy="450" r="120"/><rect x="100" y="400" width="200" height="100" rx="8"/><rect x="700" y="100" width="300" height="150" rx="12"/></g></svg>')
+                        `;
+                        heroObserver.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            heroObserver.observe(document.querySelector('.hero'));
+        }
+    </script>
+</body>
+</html>
