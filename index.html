@@ -145,12 +145,29 @@
             padding: 15px 20px;
             max-width: var(--max-width);
             margin: 0 auto;
+            position: relative;
         }
         
         .logo {
             height: 60px;
             width: auto;
             max-width: 80px;
+        }
+        
+        .brand-name {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-black);
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            letter-spacing: 0.5px;
+        }
+        
+        .brand-name.hidden {
+            opacity: 0;
         }
         
         .nav {
@@ -604,6 +621,8 @@
         <div class="header-container">
             <img src="sehtah-logo-icon.png" alt="Sehtah Services" class="logo">
             
+            <div class="brand-name" id="brandName">Sehtah Services</div>
+            
             <nav class="nav" id="nav">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -659,7 +678,7 @@
             <div class="container">
                 <div class="about-content">
                     <div class="about-text fade-in">
-                        <h2>About Sehtah Services</h2>
+                        <h2>About Us</h2>
                         <p><strong>Sehtah Services</strong> is a modern e-commerce retailer dedicated to sourcing high-quality, <strong>reliable</strong> products that truly meet customer needs. We partner with <strong>reputable</strong> suppliers and manufacturers to curate a <strong>thoughtful</strong> catalog that reflects our commitment to value, durability, and exceptional user experience.</p>
                         <p>Built on long-term relationships and a <strong>data-driven</strong> approach to retail, we focus on delivering products that customers love — and offering suppliers a dependable, <strong>professional</strong>, and growth-oriented retail partner. Whether it's introducing innovative items to the market or expanding distribution for established brands, our goal is always the same: <strong>strong</strong> sales, <strong>excellent</strong> reputation, and a <strong>seamless</strong> experience for everyone involved.</p>
                         <a href="#contact" class="btn btn-outline">Learn More</a>
@@ -826,17 +845,28 @@
         
         // Header background on scroll
         const header = document.querySelector('.header');
+        const brandName = document.getElementById('brandName');
+        const aboutSection = document.querySelector('.about');
         let lastScrollY = window.scrollY;
         
         window.addEventListener('scroll', () => {
             const currentScrollY = window.scrollY;
             
+            // Update header background
             if (currentScrollY > 100) {
                 header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
                 header.style.backdropFilter = 'blur(10px)';
             } else {
                 header.style.backgroundColor = 'white';
                 header.style.backdropFilter = 'none';
+            }
+            
+            // Hide brand name when scrolling or in About section
+            const aboutOffset = aboutSection.offsetTop - 100;
+            if (currentScrollY > 50 || currentScrollY >= aboutOffset) {
+                brandName.classList.add('hidden');
+            } else {
+                brandName.classList.remove('hidden');
             }
             
             lastScrollY = currentScrollY;
